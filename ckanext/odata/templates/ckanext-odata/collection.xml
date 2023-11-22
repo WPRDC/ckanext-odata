@@ -15,7 +15,7 @@
     <category term="ckan.odata" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
     <content type="application/xml">
       <m:properties>
-        {% for key, value in entry.iteritems() %}
+        {% for key, value in entry.items() %}
         {%- set tag = convert[key]['name'] %}
         {%- set type = convert[key]['type'] %}
         {%- if value is none %}
